@@ -1,27 +1,101 @@
 <!DOCTYPE html>
-<title>
-    Keyboard Switches - Key Kauldron
-</title>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Key Kauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
-        img{
-            height:150px;
-            width:200px;
+        /* Global font settings */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
         }
-        th, td, table{
-            border:5px solid;
-            background-color:darkorange
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: darkorange;
+            text-align: center;
+            margin-top: 20px;
         }
-        td{
-            font-size:medium
+
+        a {
+            text-decoration: none;
+            color: #333;
         }
-        .header{
-            background-color:brown;
-            color:white;
-            font-size:large
+
+        a:hover {
+            color: darkorange;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 5px solid #ddd;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        td {
+            background-color: darkorange;
+            color: white;
+        }
+
+        td img {
+            width: 200px;
+            height: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        td img:hover {
+            transform: scale(1.1);
+        }
+
+        .header {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            td, th {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            td img {
+                width: 150px;
+                height: 100px;
+            }
         }
     </style>
-    <h1><a href="home.htm">Key Kauldron</a><br /></h1>
+</head>
+<body>
+    <h1><a href="home.htm">Key Kauldron</a></h1>
     <table>
         <tr>
             <th class="header">Switches</th>
@@ -31,11 +105,11 @@
             <th class="header">Built-To-Order</th>
         </tr>
         <tr>
-            <td><a href="Switches.htm"><img src="https://unikeyboards.com/cdn/shop/files/1_7c0b6e30-3efb-474f-b7ee-e618d6bf9e96.jpg?v=1685512618&width=1920" </a></td>
-            <td><a href="Prebuilts_Services.htm"><img src="https://assets2.razerzone.com/images/pnx.assets/2e959208d49cda48bb964a9127e084d6/interactive-keyboard-keycaps-customize-mobile.webp" /></a></td>
-            <td><a href="Keycaps.htm"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdjZFlo11kgunBdm0D2bmK2nNbnojVS1HdQ&s" /></a></td>
-            <td><a href="accesories.htm">"<img src="https://kono.store/cdn/shop/products/toolswhitebackground_870x580.jpg?v=1637809538" /></a></td>
-<td><a href="custom.htm"><img src="https://www.daskeyboard.com/blog/wp-content/uploads/keyboard-parts-768x721.png" /></a></td>
+            <td><a href="Switches.htm"><img src="https://unikeyboards.com/cdn/shop/files/1_7c0b6e30-3efb-474f-b7ee-e618d6bf9e96.jpg?v=1685512618&width=1920" alt="Switches Image" /></a></td>
+            <td><a href="Prebuilts_Services.htm"><img src="https://assets2.razerzone.com/images/pnx.assets/2e959208d49cda48bb964a9127e084d6/interactive-keyboard-keycaps-customize-mobile.webp" alt="Prebuilts & Servicing" /></a></td>
+            <td><a href="Keycaps.htm"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdjZFlo11kgunBdm0D2bmK2nNbnojVS1HdQ&s" alt="Keycaps" /></a></td>
+            <td><a href="accesories.htm"><img src="https://kono.store/cdn/shop/products/toolswhitebackground_870x580.jpg?v=1637809538" alt="Accessories" /></a></td>
+            <td><a href="custom.htm"><img src="https://www.daskeyboard.com/blog/wp-content/uploads/keyboard-parts-768x721.png" alt="Built-To-Order" /></a></td>
         </tr>
         <tr>
             <td>
@@ -43,7 +117,7 @@
                     <li>Cherry</li>
                     <li>Gateron</li>
                     <li>HMX</li>
-		    <li>BSUN</li>
+                    <li>BSUN</li>
                 </ul>
             </td>
             <td>
@@ -51,7 +125,7 @@
                     <li>60%</li>
                     <li>65%</li>
                     <li>75%</li>
-		    <li>100%</li>
+                    <li>100%</li>
                 </ul>
             </td>
             <td>
@@ -68,16 +142,14 @@
                     <li>Cleaning Supplies</li>
                 </ul>
             </td>
-
             <td>
                 <ul>
                     <li>Custom Keycap Layout</li>
-                    <li>Mix 'n' Match parts</li
-                    <li>Fully Assembled or kit
+                    <li>Mix 'n' Match parts</li>
+                    <li>Fully Assembled or Kit</li>
                 </ul>
             </td>
-
-
         </tr>
     </table>
 </body>
+</html>
