@@ -1,26 +1,100 @@
 <!DOCTYPE html>
-<title>
-    Keyboard Switches - Key Kauldron
-</title>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Switches - Key Kauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
-        img{
-            height:150px;
-            width:200px;
+        /* Global font settings */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
         }
-        th, td, table{
-            border:5px solid;
-            background-color:darkorange
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: darkorange;
+            text-align: center;
+            margin-top: 20px;
         }
-        td{
-            font-size:medium
+
+        a {
+            text-decoration: none;
+            color: #333;
         }
-        .header{
-            background-color:brown;
-            color:white;
-            font-size:large
+
+        a:hover {
+            color: darkorange;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 5px solid #ddd;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        td {
+            background-color: darkorange;
+            color: white;
+        }
+
+        td img {
+            width: 200px;
+            height: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        td img:hover {
+            transform: scale(1.1);
+        }
+
+        .header {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            td, th {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            td img {
+                width: 150px;
+                height: 100px;
+            }
         }
     </style>
+</head>
+<body>
     <h1><a href="home.htm">Home</a><br /></h1>
     <table>
         <tr>
@@ -36,10 +110,10 @@
             <td>HMX EVA</td>
         </tr>
         <tr>
-            <td><img src="https://unikeyboards.com/cdn/shop/products/4_02b8d5fb-c5de-4e60-bde5-351122f439b6.jpg?v=1678074584&width=1000" /></td>
-            <td><img src="https://unikeyboards.com/cdn/shop/files/7_292f1040-191a-4ac3-b235-851504820596.jpg?v=1714027976&width=4800" /></td>
-            <td><img src="https://unikeyboards.com/cdn/shop/files/1_7c0b6e30-3efb-474f-b7ee-e618d6bf9e96.jpg?v=1685512618&width=1920" /></td>
-            <td><img src="https://unikeyboards.com/cdn/shop/files/1_6171f29a-12e7-4efc-806e-4d9bf9a9a64b.jpg?v=1710929590&width=1000" /></td>
+            <td><img src="https://unikeyboards.com/cdn/shop/products/4_02b8d5fb-c5de-4e60-bde5-351122f439b6.jpg?v=1678074584&width=1000" alt="Gateron Milky Yellow" /></td>
+            <td><img src="https://unikeyboards.com/cdn/shop/files/7_292f1040-191a-4ac3-b235-851504820596.jpg?v=1714027976&width=4800" alt="BSUN BCP" /></td>
+            <td><img src="https://unikeyboards.com/cdn/shop/files/1_7c0b6e30-3efb-474f-b7ee-e618d6bf9e96.jpg?v=1685512618&width=1920" alt="Cherry MX Brown" /></td>
+            <td><img src="https://unikeyboards.com/cdn/shop/files/1_6171f29a-12e7-4efc-806e-4d9bf9a9a64b.jpg?v=1710929590&width=1000" alt="HMX EVA" /></td>
         </tr>
         <tr>
             <td>
@@ -70,7 +144,7 @@
                     <li>Stem: T2</li>
                 </ul>
             </td>
-
         </tr>
     </table>
 </body>
+</html>
