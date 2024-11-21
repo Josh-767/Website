@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Key Kauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* Global font settings */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: #ff5733;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #ff5733;
+            text-decoration: underline;
+        }
+
+        /* Section styles */
+        section {
+            padding: 25px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        h2 {
+            color: #ff5733;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        /* Team Member Section */
+        .team-member {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #ff5733;
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member div {
+            flex: 1;
+        }
+
+        .team-member h3 {
+            color: #ff5733;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .team-member p {
+            font-size: 1.1em;
+        }
+
+        /* Our Values Section with normal bullets */
+        ul {
+            list-style-type: disc; /* Default bullet points */
+            padding-left: 20px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding-left: 15px;
+        }
+
+        /* Hover effects for team member names */
+        .team-member h3:hover {
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive design for mobile */
+        @media screen and (max-width: 768px) {
+            .team-member {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="home.htm">Key Kauldron</a></h1>
+    
+    <!-- About Us Section -->
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to Key Kauldron, your ultimate destination for high-quality mechanical keyboard components. We’re passionate about the art of building custom keyboards and providing the best products for enthusiasts, gamers, and tech lovers alike. Our mission is to bring together the finest switches, keycaps, and accessories to help you craft the perfect typing experience.</p>
+        <p>At Key Kauldron, we believe that a keyboard is more than just a tool – it's an expression of personality, creativity, and comfort. Whether you're a casual typist, a competitive gamer, or someone who enjoys tinkering with custom builds, we’ve got something for you.</p>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section>
+        <h2>Meet the Team</h2>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/180" alt="Ben Dover">
+            <div>
+                <h3>Ben Dover</h3>
+                <p>Co-Founder & CEO</p>
+                <p>Ben has been a mechanical keyboard enthusiast for over 10 years. He started Key Kauldron with the goal of creating a one-stop shop for all keyboard enthusiasts. His passion for customizing keyboards and understanding the technical aspects of switches has driven Key Kauldron’s success.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/180" alt="Mike Jass">
+            <div>
+                <h3>Mike Jass</h3>
+                <p>Co-Founder & Product Manager</p>
+                <p>Mike brings years of experience in product management and customer relations to the team. He ensures that Key Kauldron always offers the best products and that our customers are satisfied with their experience. Mike is passionate about helping people build their dream keyboard setups.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section>
+        <h2>Our Values</h2>
+        <ul>
+            <li>Quality: We only source the best products for our customers, ensuring long-lasting durability and performance.</li>
+            <li>Innovation: We are constantly seeking new and improved products to help you build better keyboards.</li>
+            <li>Community: We believe in the power of the mechanical keyboard community and are dedicated to supporting it through educational content and quality customer service.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
