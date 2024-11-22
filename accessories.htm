@@ -1,53 +1,173 @@
 <!DOCTYPE html>
-<title>
-    Accessories - Key Kauldron
-</title>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Key Kauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
-        li {
-            font-size: large;
+        /* Global font settings */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Makes the body take up at least 100% of the viewport height */
+        }
+
+        html {
+            height: 100%; /* Ensures the html element takes up the full height */
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: darkorange;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 5px solid #ddd;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        td {
+            background-color: darkorange;
+            color: white;
+        }
+
+        td img {
+            width: 200px;
+            height: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        td img:hover {
+            transform: scale(1.1);
+        }
+
+        .header {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1.1em;
             color: brown;
-            font-family: Yu Gothic;
+            font-family: "Yu Gothic", sans-serif;
             font-weight: 500;
         }
-        h1, h3 {
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Ensures the footer stays at the bottom */
+        }
+
+        .footer a {
             color: darkorange;
-            font-family: Cambria
+            font-weight: bold;
         }
-        img {
-            height: 600px;
-            width: 850px;
+
+        .footer a:hover {
+            color: white;
         }
-        #ssd{
-            height: 850px;
-            width: 850px;
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            td, th {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            td img {
+                width: 150px;
+                height: 100px;
+            }
         }
     </style>
-    <a href="home.htm"><h1>Home</h1></a><br />
-    <img src="https://flashquark.com/wp-content/uploads/2020/11/GPL-205g0-Mechanical-Keyboard-Switch-Lube.jpg" id="ssd" />
-    <h1>Lubricant</h1>
-    <ul>
-        <li>Offered in: 205g0, Tribosys 3204, and Permatex</li>
-        <li>Often applied to switches or stabilizers</li>
-        <li>Lubrication often improves feel and sound</li>
-        <li>$15.00 Per Mini Jar</li>
-    </ul>
-    <img src="https://kono.store/cdn/shop/products/toolswhitebackground_1049x700.jpg?v=1637809538" />
-    <h1>General Toolset</h1>
-    <h3>Includes:</h3>
-    <ul>
-        <li>Keycap/Switch Puller</li>
-        <li>Brushes</li>
-        <li>Tweezers</li>
-        <li>Switch Films</li>
-        <li>$10</li>
-    </ul>
-    <img src="https://marblek.com/wp-content/uploads/2019/09/IMG_8209-800x533.jpg.webp"  />
-    <h1>Wrist Rests</h1>
-    <ul>
-        <li>Offered by keyboard size</li>
-        <li>Used from 40% boards to 100%</li>
-        <li>Improves ergonomic feel</li>
-        <li>$30</li>
-    </ul>
+</head>
+<body>
+    <h1><a href="home.htm">Key Kauldron</a></h1>
+    
+    <table>
+        <tr>
+            <th class="header">Lubricant</th>
+            <th class="header">General Toolset</th>
+            <th class="header">Wrist Rests</th>
+        </tr>
+        <tr>
+            <td><a href="lubricant.htm"><img src="https://flashquark.com/wp-content/uploads/2020/11/GPL-205g0-Mechanical-Keyboard-Switch-Lube.jpg" alt="Lubricant" /></a></td>
+            <td><a href="tools.htm"><img src="https://kono.store/cdn/shop/products/toolswhitebackground_1049x700.jpg?v=1637809538" alt="General Toolset" /></a></td>
+            <td><a href="wristrests.htm"><img src="https://marblek.com/wp-content/uploads/2019/09/IMG_8209-800x533.jpg.webp" alt="Wrist Rests" /></a></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Offered in: 205g0, Tribosys 3204, and Permatex</li>
+                    <li>Often applied to switches or stabilizers</li>
+                    <li>Lubrication improves feel and sound</li>
+                    <li>$15.00 Per Mini Jar</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Keycap/Switch Puller</li>
+                    <li>Brushes</li>
+                    <li>Tweezers</li>
+                    <li>Switch Films</li>
+                    <li>$10.00</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Offered by keyboard size</li>
+                    <li>Used from 40% boards to 100%</li>
+                    <li>Improves ergonomic feel</li>
+                    <li>$30.00</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer with About Us Link -->
+    <div class="footer">
+        <p><a href="About_Us.htm">Learn more about us</a></p>
+    </div>
 </body>
+</html>

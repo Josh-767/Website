@@ -1,44 +1,168 @@
 <!DOCTYPE html>
-<title>
-    Keycaps - Key Kauldron
-</title>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keycaps - Key Kauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
-        img {
-            width: 495px;
-            height: 382px;
+        /* Global font settings */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes up at least 100% of the viewport height */
         }
-        h1{
-            font-weight:700;
-            color:darkorange;
+
+        html {
+            height: 100%; /* Ensures the html element takes up the full height */
         }
-        li{
-            font-size:larger;
-            color:brown;
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: darkorange;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 5px solid #ddd;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        td {
+            background-color: darkorange;
+            color: white;
+        }
+
+        td img {
+            width: 100%;
+            max-width: 495px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        td img:hover {
+            transform: scale(1.1);
+        }
+
+        .header {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Ensures the footer stays at the bottom */
+        }
+
+        .footer a {
+            color: darkorange;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            td, th {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            td img {
+                width: 90%;
+                height: auto;
+            }
         }
     </style>
-    <h1><a href="home.htm">Home</a><br /></h1>
-    <img src="https://cannonkeys.com/cdn/shop/files/nPBTThaiTea_4x3_-2.jpg?v=1720567447&width=2000" />
-    <h1>NicePBT Thai Tea</h1>
-    <ul>
-        <li>PBT Dye Sublimation Plastic</li>
-        <li>Cherry Height Profile</li>
-        <li>$150</li>
-    </ul><br />
+</head>
+<body>
 
-    <img src="https://i.shgcdn.com/12bcd2b7-5105-4c83-bfdb-49dd45a6528b/-/format/auto/-/preview/3000x3000/-/quality/best/" />
-    <h1>PBTFans Dracula</h1>
-    <ul>
-        <li>ABS Doubleshot Plastic</li>
-        <li>Cherry Height Profile</li>
-        <li>$150</li>
-    </ul><br />
+    <h1><a href="home.htm">Key Kauldron</a></h1>
 
-    <img src="https://kono.store/cdn/shop/products/symb-kn2-horiz-min_1050x700.jpg?v=1554081346" />
-    <h1>Signature Plastics</h1>
-    <ul>
-        <li>ABS Doubleshot Plastic</li>
-        <li>SA Height Profile</li>
-        <li>$150</li>
-    </ul>
+    <table>
+        <tr>
+            <th class="header">NicePBT Thai Tea</th>
+            <th class="header">PBTFans Dracula</th>
+            <th class="header">Signature Plastics</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://cannonkeys.com/cdn/shop/files/nPBTThaiTea_4x3_-2.jpg?v=1720567447&width=2000" alt="NicePBT Thai Tea" />
+                <ul>
+                    <li>PBT Dye Sublimation Plastic</li>
+                    <li>Cherry Height Profile</li>
+                    <li>$150</li>
+                </ul>
+            </td>
+            <td>
+                <img src="https://i.shgcdn.com/12bcd2b7-5105-4c83-bfdb-49dd45a6528b/-/format/auto/-/preview/3000x3000/-/quality/best/" alt="PBTFans Dracula" />
+                <ul>
+                    <li>ABS Doubleshot Plastic</li>
+                    <li>Cherry Height Profile</li>
+                    <li>$150</li>
+                </ul>
+            </td>
+            <td>
+                <img src="https://kono.store/cdn/shop/products/symb-kn2-horiz-min_1050x700.jpg?v=1554081346" alt="Signature Plastics" />
+                <ul>
+                    <li>ABS Doubleshot Plastic</li>
+                    <li>SA Height Profile</li>
+                    <li>$150</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer with About Us Link -->
+    <div class="footer">
+        <p><a href="About_Us.htm">Learn more about us</a></p>
+    </div>
+
 </body>
+</html>
