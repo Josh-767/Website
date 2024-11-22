@@ -1,217 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Keyboard Designer - Key Kauldron</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<title>
+    Cases - Key Kauldron
+</title>
+<body>
     <style>
-        /* Global font settings */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensures the body takes up at least 100% of the viewport height */
-        }
-
-        html {
-            height: 100%; /* Ensures the html element takes up the full height */
-        }
-
-        h1 {
-            font-family: 'Lobster', cursive;
-            color: darkorange;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        h1 a {
-            color: darkorange;
-            text-decoration: none;
-        }
-
-        h1 a:hover {
+        li {
+            font-size: large;
             color: brown;
-        }
-
-        /* Table Styles */
-        table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: center;
-            border: 5px solid #ddd;
-        }
-
-        th {
-            background-color: brown;
-            color: white;
-            font-size: 1.2em;
-        }
-
-        td {
-            background-color: darkorange;
-            color: white;
-        }
-
-        td img {
-            width: 200px;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
-
-        td img:hover {
-            transform: scale(1.1);
-        }
-
-        .header {
-            background-color: brown;
-            color: white;
-            font-size: 1.2em;
-            padding: 10px;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            font-size: 1.1em;
-            color: brown;
-            font-family: "Yu Gothic", sans-serif;
+            font-family: Yu Gothic;
             font-weight: 500;
         }
 
-        ul li {
-            margin: 10px 0;
-        }
-
-        /* Footer Section */
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: auto; /* Ensures the footer stays at the bottom */
-        }
-
-        .footer a {
+        h1 {
             color: darkorange;
-            font-weight: bold;
+            font-family: Cambria
         }
-
-        .footer a:hover {
-            color: white;
+        img {
+            height: 500px;
+            width: 900px;
         }
-
-        /* Responsive design */
-        @media screen and (max-width: 768px) {
-            td, th {
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            td img {
-                width: 150px;
-                height: 100px;
-            }
-        }
-
-        /* Alternating Grey and Orange Colors */
-        tr:nth-child(even) {
-            background-color: #f0f0f0; /* Light grey for even rows */
-        }
-
-        tr:nth-child(odd) {
-            background-color: darkorange; /* Orange for odd rows */
-        }
-
-        /* Contact Section Styling */
-        .contact {
-            background-color: #f8f8f8;
-            text-align: center;
-            padding: 15px;
-            font-size: 1.2em;
-            color: darkorange;
-            font-weight: bold;
+        #board{
+            height:600px;
+            width:900px;
         }
     </style>
-</head>
-<body>
-
-    <h1><a href="home.htm">Key Kauldron</a></h1>
-
-    <table>
-        <tr>
-            <th class="header">Step 1: Select Layout</th>
-            <th class="header">Step 2: Choose Key Switches</th>
-            <th class="header">Step 3: Select Keycaps</th>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Choose from 60%, 65%, 75%, or 100% layouts</li>
-                    <li>Customize your layout to fit your needs</li>
-                    <li>Ergonomics and functionality options</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Choose from Cherry, Gateron, and other popular switches</li>
-                    <li>Options include tactile, linear, or clicky switches</li>
-                    <li>Switch types affect the feel and sound of your keyboard</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Choose from GMK, Ducky, and more premium keycap sets</li>
-                    <li>Colors, textures, and profiles to match your style</li>
-                    <li>Custom keycap legends and designs available</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th class="header">Step 4: Select Accessories</th>
-            <th class="header">Step 5: Assembly & Customization</th>
-            <th class="header">Step 6: Order & Shipping</th>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Key pullers, lube kits, wrist rests, and more</li>
-                    <li>Perfect tools to enhance your keyboard setup</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Choose between fully assembled or kit options</li>
-                    <li>Custom assembly to fit your preferences</li>
-                    <li>Lubed switches, premium stabilizers, and more</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Review your selections and place your order</li>
-                    <li>Enjoy quick processing and shipping</li>
-                    <li>Tracking information provided for your order</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-
-    <div class="contact">
-        <p>Contact us at <strong>custom@keykauldron.org</strong> with your order.</p>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>Learn more about us</p>
-    </div>
-
+    <a href="home.htm"><h1>Home</h1></a>
+    <img src="https://cdn.store-assets.com/s/402514/f/13975543.webp" />
+    <h1>Luminkey60 LX</h1>
+    <ul>
+        <li>60% Form Factor</li>
+        <li>Brass or Copper accent</li>
+        <li>$150</li>
+    </ul><br />
+    <img id="board" src="https://preview.redd.it/neo75-update-launching-late-this-month-starting-at-195-v0-2mlpjhuqsbud1.jpg?width=1080&crop=smart&auto=webp&s=778b56aa6de5480cdcf580a2e30dd6334c8ef0de" />
+    <h1>Neo 75 CU</h1>
+    <ul>
+        <li>75% Form Factor</li>
+        <li>Brass Accents</li>
+        <li>$180</li>
+    </ul><br />
+    <img src="https://i.imgur.com/g3lu4sG.jpg" />
+    <h1>KBDFans Odin</h1>
+    <ul>
+        <li>100% Form Factor</li>
+        <li>Stainless Steel Accents</li>
+        <li>$350</li>
+    </ul><br />
 </body>
-</html>
