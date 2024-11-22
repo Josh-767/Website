@@ -1,49 +1,180 @@
 <!DOCTYPE html>
-<title>
-    Cases - Key Kauldron
-</title>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases - Key Kauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
-        li {
-            font-size: large;
-            color: brown;
-            font-family: Yu Gothic;
-            font-weight: 500;
+        /* Global font settings */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes up at least 100% of the viewport height */
+        }
+
+        html {
+            height: 100%; /* Ensures the html element takes up the full height */
         }
 
         h1 {
+            font-family: 'Lobster', cursive;
             color: darkorange;
-            font-family: Cambria
+            text-align: center;
+            margin-top: 20px;
         }
-        img {
-            height: 500px;
-            width: 900px;
+
+        a {
+            text-decoration: none;
+            color: #333;
         }
-        #board{
-            height:600px;
-            width:900px;
+
+        a:hover {
+            color: darkorange;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 5px solid #ddd;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        td {
+            background-color: darkorange;
+            color: white;
+        }
+
+        td img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        td img:hover {
+            transform: scale(1.1);
+        }
+
+        .header {
+            background-color: brown;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1.1em;
+            color: brown;
+            font-family: "Yu Gothic", sans-serif;
+            font-weight: 500;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Ensures the footer stays at the bottom */
+        }
+
+        .footer a {
+            color: darkorange;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            td, th {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            td img {
+                width: 150px;
+                height: 100px;
+            }
+        }
+
+        /* Alternating Grey and Orange Colors */
+        tr:nth-child(even) {
+            background-color: #f0f0f0; /* Light grey for even rows */
+        }
+
+        tr:nth-child(odd) {
+            background-color: darkorange; /* Orange for odd rows */
         }
     </style>
-    <a href="home.htm"><h1>Home</h1></a>
-    <img src="https://cdn.store-assets.com/s/402514/f/13975543.webp" />
-    <h1>Luminkey60 LX</h1>
-    <ul>
-        <li>60% Form Factor</li>
-        <li>Brass or Copper accent</li>
-        <li>$150</li>
-    </ul><br />
-    <img id="board" src="https://preview.redd.it/neo75-update-launching-late-this-month-starting-at-195-v0-2mlpjhuqsbud1.jpg?width=1080&crop=smart&auto=webp&s=778b56aa6de5480cdcf580a2e30dd6334c8ef0de" />
-    <h1>Neo 75 CU</h1>
-    <ul>
-        <li>75% Form Factor</li>
-        <li>Brass Accents</li>
-        <li>$180</li>
-    </ul><br />
-    <img src="https://i.imgur.com/g3lu4sG.jpg" />
-    <h1>KBDFans Odin</h1>
-    <ul>
-        <li>100% Form Factor</li>
-        <li>Stainless Steel Accents</li>
-        <li>$350</li>
-    </ul><br />
+</head>
+<body>
+
+    <h1><a href="home.htm">Key Kauldron</a></h1>
+
+    <table>
+        <tr>
+            <th class="header">Luminkey60 LX</th>
+            <th class="header">Neo 75 CU</th>
+            <th class="header">KBDFans Odin</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://cdn.store-assets.com/s/402514/f/13975543.webp" alt="Luminkey60 LX" />
+                <ul>
+                    <li>60% Form Factor</li>
+                    <li>Brass or Copper accent</li>
+                    <li>$150</li>
+                </ul>
+            </td>
+            <td>
+                <img src="https://preview.redd.it/neo75-update-launching-late-this-month-starting-at-195-v0-2mlpjhuqsbud1.jpg?width=1080&crop=smart&auto=webp&s=778b56aa6de5480cdcf580a2e30dd6334c8ef0de" alt="Neo 75 CU" />
+                <ul>
+                    <li>75% Form Factor</li>
+                    <li>Brass Accents</li>
+                    <li>$180</li>
+                </ul>
+            </td>
+            <td>
+                <img src="https://i.imgur.com/g3lu4sG.jpg" alt="KBDFans Odin" />
+                <ul>
+                    <li>100% Form Factor</li>
+                    <li>Stainless Steel Accents</li>
+                    <li>$350</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer with About Us Link -->
+    <div class="footer">
+        <p>Learn more about us</p>
+    </div>
+
 </body>
+</html>
